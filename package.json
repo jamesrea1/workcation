@@ -1,0 +1,28 @@
+{
+  "name": "tailwind-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server \"./dist/\" --files \"dist/css/*.css, dist/js/*.js, dist/*.html, !node_modules/**/*.html\"",
+    "css": "postcss src/tailwind.css -o dist/css/tailwind.css",
+    "tailwind-config-create-default": "npx tailwind init tailwind.config.full.js --full"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.12",
+    "copyfiles": "^2.3.0",
+    "del-cli": "^3.0.1",
+    "mkdirp": "^1.0.4",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.9",
+    "postcss-cli": "^8.0.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.8.10"
+  }
+}
